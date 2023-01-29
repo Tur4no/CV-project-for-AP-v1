@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f28be26931.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/CV/index.html" id="navbar__logo"><i class="fas fa-book"></i> Curriculum</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#Home" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#Experiencia" class="navbar__links">Experiencia</a>
+                </li> 
+                <li class="navbar__item">
+                    <a href="/CV/perfiles.html" class="navbar__links">Sobre Mi</a>
+                </li>
+                <li class="navbar__btn">
+                    <a class="button">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hero-->
+    <div class="main" id="Home">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Felipe Turano</h1>
+                <h2>Full Stack</h2>
+                <p>Mis Redes</p>
+                
+                <div class="btn__container">
+                    <button class="main__btn"><a href="https://www.linkedin.com/in/felipe-turano/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></button>
+                    <button class="main__btn"><a href="https://twitter.com/Felipe_Turano" target="_blank"><i class="fa-brands fa-twitter"></i></a></button>
+                    <button class="main__btn"><a href="https://www.instagram.com/felipe.turano/" target="_blank"><i class="fa-brands fa-instagram"></i></a></button>
+                </div>
+                
+            </div>
+            <div class="main__img--container">
+                <img src="imagenes/YO.jpeg" alt="pic" id="main__img">
+            </div>
+        </div>
+    </div>
+
+    <!--Experiencia-->
+    <div class="experiencia" id="Experiencia">
+
+        <h1>Mis Experiencias</h1>
+            <div class="experiencia__container">
+                <div class="experiencia__card">
+                <h2>Programacion</h2>
+                <p>- JavaScript</p>
+                <p>- Python</p>
+                <p>- HTML5 + CSS</p>
+                </div>
+                <div class="experiencia__card">
+                <h2>Front End</h2>
+                <p>- ReactJs</p>
+                <p>- NodeJs</p>
+                <p>- Angular</p>
+                </div>
+                 <div class="experiencia__card">
+                <h2>Back End</h2>
+                <p>- MySQL</p>
+                <p>- Firebase</p>
+                <p>- MongoDB</p>
+                </div>
+                <div class="experiencia__card">
+                <h2>Otros</h2>
+                <p>- Excel</p>
+                <p>- PhotoShop</p>
+                <p>- UI Design</p>
+                </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Felipe Turano</h2>
+                    <a href="#Home">Home</a>
+                    <a href="#Experiencia">Experiencia</a>
+                    <a href="/CV/perfiles.html">Sobre Mi</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Mis Redes</h2>
+                    <a href="https://www.linkedin.com/in/felipe-turano/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>Linkedin</a>
+                    <a href="https://twitter.com/Felipe_Turano" target="_blank"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                    <a href="https://www.instagram.com/felipe.turano/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---Modal-->
+    <div class="modal" id="contacto">
+        <div class="modal__content">
+            <span class="close__btn">&times;</span>
+            <div class="modal__content--izquierda">
+                <img id="modal__img" src="/CV/imagenes/contacto.svg" alt="">
+            </div>
+            <div class="modal__content--derecha">
+                <form action="/" method="get" class="modal-form" id="form">
+                    <h1>Contacto</h1>
+                    <div class="form-validation">
+                        <input type="text" class="modal-input" id="name" name="name" placeholder="Escribe tu Nombre"></input>
+                    </div>
+                    <div class="form-validation">
+                        <input type="text" class="modal-input" id="empresa" name="empresa" placeholder="Nombre de la empresa"></input>
+                    </div>
+                    <div class="form-validation">
+                        <input type="email" class="modal-input" id="email" name="email" placeholder="E-mail"></input>
+                    </div>
+                    <div class="form-validation">
+                        <input type="text" class="modal-input" id="mensaje" name="mensaje" placeholder="Escribe un mensaje"></input>
+                    </div>
+                    <button class="main__btn"><a href="/CV/index.html">ENVIAR</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
